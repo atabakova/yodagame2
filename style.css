@@ -1,0 +1,71 @@
+.game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 1px solid white;
+  margin: auto;
+}
+
+#yoda {
+  width: 60px;
+  height: 60px;
+  background-image: url(img/yoda.png);
+  background-size: 60px 60px;
+  position: relative;
+  top: 140px;
+}
+
+#fire {
+  width: 30px;
+  height: 30px;
+  background-image: url(img/laser.png);
+  background-size: 30px 30px;
+  position: relative;
+  top: 115px;
+  left: 500px;
+  animation: fireMov 1.2s infinite ease-in;
+}
+
+#cannon {
+  width: 170px;
+  height: 130px;
+  background-image: url(img/man.png);
+  background-size: 170px 130px;
+  position: relative;
+  top: 73px;
+  left: 530px;
+}
+
+@keyframes fireMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+
+  30% {
+    top: 130px;
+  }
+
+  50% {
+    top: 80px;
+  }
+
+  80% {
+    top: 130px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
